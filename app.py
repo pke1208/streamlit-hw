@@ -31,7 +31,7 @@ if selected_movie:
     st.write(f"**Company:** {movie_data['company']}")
     st.write(f"**Runtime:** {movie_data['runtime']} minutes")
     
-    # Simple visualization: Bar chart comparing movie's numerical stats to dataset averages
+
     st.subheader('Visualization: Movie Stats vs Dataset Averages')
     averages = df[['score', 'votes', 'budget', 'gross', 'runtime']].mean()
     movie_stats = movie_data[['score', 'votes', 'budget', 'gross', 'runtime']]
