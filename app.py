@@ -3,10 +3,7 @@ import pandas as pd
 
 # Load the dataset
 df = pd.read_csv('movies.csv')
-
-# Clean the data if necessary (e.g., handle missing values, but assuming it's clean)
-df = df.dropna(subset=['name'])  # Ensure no null movie names
-
+df = df.dropna(subset=['name']) 
 st.title('Movie Details and Visualization App')
 
 # Dropdown for movie selection
